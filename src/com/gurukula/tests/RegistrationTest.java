@@ -6,8 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import classes.RegistrationData;
-
+import com.gurukula.classes.RegistrationData;
 import com.gurukula.structure.MenuBar;
 import com.gurukula.structure.RegistrationPage;
 

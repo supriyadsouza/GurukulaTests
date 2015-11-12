@@ -1,4 +1,4 @@
-package classes;
+package com.gurukula.classes;
 
 public class RegistrationData {
 	private String login;
