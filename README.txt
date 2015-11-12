@@ -17,3 +17,5 @@ Steps to Run
 1. Build the project
 2. Run the testRegistration.xml file as a TestNG suite (this only tests registration functionality)
 3. Run the testUseCases.xml file as a TestNG suite (this will test logging in as admin and everything else)
+
+I can think of optimizing the code better. But I will stop for now, perhaps pick this up later.
