@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SmartPin Regression Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 12 19:06:17 CET 2015</td>
+<td>Started on:</td><td>Thu Nov 12 19:04:44 CET 2015</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10857 ms)</td>
+<tr><td>Total time:</td><td>1028 seconds (1028009 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,20 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@6531a794</td>
-<td><div><pre>junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertFalse(Assert.java:34)
-	at junit.framework.Assert.assertFalse(Assert.java:41)
-	at com.gurukula.tests.RegistrationTest.testRegisterNewUser(RegistrationTest.java:57)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079565272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2079565272'><pre>junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertFalse(Assert.java:34)
-	at junit.framework.Assert.assertFalse(Assert.java:41)
-	at com.gurukula.tests.RegistrationTest.testRegisterNewUser(RegistrationTest.java:57)
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@5b799640</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 1000 seconds waiting for element to be clickable: By.xpath: html/body/div[3]/div[1]/div/div/div/form/div[1]/div/p[1]
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SupriyaPC&apos;, ip: &apos;192.168.1.67&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6a84c16a-85a1-4cb7-a6c6-831764515e66
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.gurukula.structure.BasePage.waitUntilElementIsVisible(BasePage.java:38)
+	at com.gurukula.structure.BasePage.isElementVisible(BasePage.java:21)
+	at com.gurukula.structure.RegistrationPage.isLoginRequiredMessageShown(RegistrationPage.java:64)
+	at com.gurukula.tests.RegistrationTest.testRegisterNewUser(RegistrationTest.java:45)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2028036437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2028036437'><pre>org.openqa.selenium.TimeoutException: Timed out after 1000 seconds waiting for element to be clickable: By.xpath: html/body/div[3]/div[1]/div/div/div/form/div[1]/div/p[1]
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SupriyaPC&apos;, ip: &apos;192.168.1.67&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6a84c16a-85a1-4cb7-a6c6-831764515e66
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.gurukula.structure.BasePage.waitUntilElementIsVisible(BasePage.java:38)
+	at com.gurukula.structure.BasePage.isElementVisible(BasePage.java:21)
+	at com.gurukula.structure.RegistrationPage.isLoginRequiredMessageShown(RegistrationPage.java:64)
+	at com.gurukula.tests.RegistrationTest.testRegisterNewUser(RegistrationTest.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -114,7 +126,49 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>1</td>
+<td>1002</td>
+<td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
+<tr>
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@6c2d4cc6</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertFalse(Assert.java:34)
+	at junit.framework.Assert.assertFalse(Assert.java:41)
+	at com.gurukula.tests.RegistrationTest.testRegisterNewUser(RegistrationTest.java:58)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2042884127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2042884127'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertFalse(Assert.java:34)
+	at junit.framework.Assert.assertFalse(Assert.java:41)
+	at com.gurukula.tests.RegistrationTest.testRegisterNewUser(RegistrationTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>4</td>
 <td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -125,29 +179,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@5b799640</td>
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@54a3ab8f</td>
 <td></td>
-<td>1</td>
+<td>5</td>
 <td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
 <tr>
-<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@13526e59</td>
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@66b72664</td>
 <td></td>
-<td>1</td>
+<td>3</td>
 <td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
 <tr>
-<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@7d9f158f</td>
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@117632cf</td>
 <td></td>
-<td>1</td>
+<td>3</td>
 <td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
 <tr>
-<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@62656be4</td>
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@31198ceb</td>
 <td></td>
-<td>1</td>
+<td>4</td>
 <td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
 <tr>
-<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@1ebea008</td>
+<td title='com.gurukula.tests.RegistrationTest.testRegisterNewUser()'><b>testRegisterNewUser</b><br>Test class: com.gurukula.tests.RegistrationTest<br>Parameters: classes.RegistrationData@632aa1a3</td>
 <td></td>
-<td>1</td>
+<td>4</td>
 <td>com.gurukula.tests.RegistrationTest@4563e9ab</td></tr>
 </table><p>
 </body>
