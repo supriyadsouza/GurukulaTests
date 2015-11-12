@@ -8,6 +8,7 @@
 bin/
 tmp/
 test-output/
+target/
 *.tmp
 *.bak
 *.swp
