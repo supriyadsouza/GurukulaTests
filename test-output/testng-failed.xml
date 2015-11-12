@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Suite]" parallel="none">
+  <test name="SmartPin Regression Tests(failed)" parallel="none">
+    <classes>
+      <class name="com.gurukula.tests.RegistrationTest">
+        <methods>
+          <include name="testRegisterNewUser" invocation-numbers="5"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gurukula.tests.RegistrationTest -->
+    </classes>
+  </test> <!-- SmartPin Regression Tests(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->

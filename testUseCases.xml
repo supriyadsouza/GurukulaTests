@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" parallel="none">
+  <parameter name="loginid" value="admin"></parameter>
+  <parameter name="password" value="admin"></parameter>
+  <test name="SmartPin Regression Tests" group-by-instances="true" preserve-order="true">
+      <classes>
+         <class name="com.gurukula.tests.BranchesTest">
+          	<parameter name="query" value="PORT"></parameter>
+          	<parameter name="expectedOccurrences" value="1"></parameter>
+          	<parameter name="code" value="BIO"></parameter>
+          	<parameter name="name" value="Biology"></parameter>
+          	<parameter name="codeForEditing" value="PORT"></parameter>
+          	<parameter name="newName" value="Porticulture"></parameter>
+          	<parameter name="codeForDeletion" value="PORT"></parameter>
+          </class>
+          <class name="com.gurukula.tests.StaffsTest">
+            <parameter name="query" value="Supriya"></parameter>
+          	<parameter name="expectedOccurrences" value="1"></parameter>
+          	<parameter name="name" value="Googly Woogly"></parameter>
+          	<parameter name="branch" value="Philosophy"></parameter>
+          	<parameter name="staffForEditing" value="Humpty Dumpty"></parameter>
+          	<parameter name="newName" value="Willy Wonka"></parameter>
+          	<parameter name="sbranch" value="Chemistry"></parameter>
+          	<parameter name="nameForDeletion" value="Oompah Loompah"></parameter>
+          </class>
+	      <class name="com.gurukula.tests.LoggedInInformationTest">
+	      	<parameter name="firstname" value="supriya"></parameter>
+	      	<parameter name="lastname" value="dsouza"></parameter>
+	      	<parameter name="email" value="supriya.dsouza@gmail.com"></parameter>
+	      	<parameter name="language" value="English"></parameter>
+	      </class>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
